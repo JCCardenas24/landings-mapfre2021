@@ -2,6 +2,7 @@
  * Funcionalidades
  */
 const nCompleto = document.getElementById('nombre');
+const cPostal = document.getElementById('codigo');
 const correo = document.getElementById('mail');
 const phone = document.getElementById('telefono');
 const car = document.getElementById('marca');
@@ -12,18 +13,16 @@ const btnCotizar = document.getElementById('cotizar');
 
 inpts.forEach(element => {
     element.addEventListener('focusout', function() {
-        let inptsValid = document.querySelectorAll('.is-valid').length + 1;
-        if((inpts.length === (inptsValid))) {
-            console.log(inptsValid);
+        let inptValid = document.querySelectorAll('.fa-check.d-none').length;
+        console.log(inptValid);
+        if(inptValid === 6) {
             btnData.removeAttribute('disabled');
-            btnCotizar.removeAttribute('disabled');
         } else {
-            console.log(inptsValid);
             btnData.setAttribute('disabled', true);
-            btnCotizar.setAttribute('disabled', true);
         }
     })
 });
+
 
 btnData.addEventListener('click', function() {
     window.location.href = 'thanks.php'
@@ -39,6 +38,18 @@ nCompleto.addEventListener('focusout', function() {
         document.querySelector('.validNom.fa-check').classList.add('d-none');
     }
 });
+
+cPostal.addEventListener('focusout', function() {
+    let vNom = validateNumber(this, this.value);
+    if(vNom == true) {
+        document.querySelector('.validCodigo.fa-check').classList.remove('d-none');
+        document.querySelector('.validCodigo.fa-times').classList.add('d-none');
+    } else {
+        document.querySelector('.validCodigo.fa-times').classList.remove('d-none');
+        document.querySelector('.validCodigo.fa-check').classList.add('d-none');
+    }
+});
+
 
 correo.addEventListener('focusout', function() {
     let vMail = validateMail(this, this.value);
