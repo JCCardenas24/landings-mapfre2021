@@ -1,0 +1,301 @@
+/**
+ * Hoja de estilos general
+ **/
+@font-face {
+    font-family: 'Klavika-regular';
+    src: url('../fonts/Klavika\ Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Klavika-bold';
+    src: url('../fonts/Klavika\ Bold\ Bold.otf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #000;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, form, p, span {
+    font-family: 'Klavika-regular';
+}
+
+input::placeholder {
+    color: #a5a5a5 !important;
+    margin-left: 10px;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/**
+ * Height
+ */
+
+/**
+ * Fonts
+ */
+
+.f-bold {
+    font-family: 'Klavika-bold';
+}
+
+/**
+ * Backgrounds
+ */
+
+.bg-general {
+    background-image: url('../images/bg_general.png');
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+.bg-red {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+/**
+ * Textos
+ */
+
+.txt-title {
+    font-size: 4rem;
+}
+
+.txt-10 {
+    font-size: 12px;
+}
+
+/**
+ * Imágenes
+ */
+
+.img-bg-plecas {
+    width: 100%;
+    height: 100vh;
+}
+
+/**
+ * Contenedores dinámicos
+ */
+
+.pos-form {
+    position: absolute;
+    top: 14%;
+    left: 17%;
+}
+
+.pos-text {
+    position: absolute;
+    top: 49%;
+    left: 15%;
+}
+
+.pos-validate {
+    float: right;
+    position: relative;
+    top: -25px;
+    left: -22%;
+}
+
+/**
+ * Colores
+ */
+
+.c-white {
+    color: #fff;
+}
+
+.c-green {
+    color: #029202;
+}
+
+.c-red {
+    color: #aa0202;
+}
+
+/**
+ * Buttons
+ */
+
+.btn-dark-gray {
+    background-color: #2C2C2C;
+    color: #fff;
+}
+
+.btn-dark-gray:hover {
+    background-color: #131313;
+    color: #fff;
+}
+
+.btn-dark-gray:disabled {
+    background-color: #727070;
+    opacity: 1;
+    color: #fff;
+}
+
+/**
+ * Border
+ */
+
+.brd-rounded {
+    border-radius: 10px;
+}
+
+/**
+ * Display
+ */
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-desktop {
+    display: none !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #131313;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #131313;
+}
+
+@media screen and (min-width:1024px) {
+    .h-100 {
+        height: 100vh !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    section {
+        height: 150vh;
+    }
+
+    .section-height {
+        height: 100vh !important;
+    }
+
+    .bg-general {
+        background-image: none;
+    }
+
+    .bg-general-mobile {
+        background-image: url('../images/bg_mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-position-y: 10px;
+    }
+
+    .bg-general-mobile-thanks {
+        background-image: url('../images/2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-position-y: 10px;
+    }
+
+    .d-mobile {
+        display: none;
+    }
+
+    .txt-title {
+        font-size: 3rem;
+    }
+
+    .d-desktop {
+        display: block !important;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+    .ptext {
+        padding-top: 110%;
+        padding-bottom: 20%;
+    }
+
+    .d-flex {
+        display: block !important;
+    }
+
+    .mx-100 {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    section {
+        height: 190vh;
+    }
+
+    .bg-general {
+        background-image: none;
+    }
+
+    .bg-general-mobile {
+        background-image: url('../images/bg_mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-position-y: 10px;
+    }
+
+    .bg-general-mobile-thanks {
+        background-image: url('../images/thanks_bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-position-y: 10px;
+    }
+
+    .d-mobile {
+        display: none;
+    }
+
+    .d-desktop {
+        display: block !important;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+    .ptext {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .d-flex {
+        display: block !important;
+    }
+
+    .mx-100 {
+        max-width: 100%;
+    }
+
+    .txt-title {
+        font-size: 4rem !important;
+    }
+
+}
