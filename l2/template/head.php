@@ -25,3 +25,4 @@
 <link rel="stylesheet" href="assets/css/styles.min.css">
 <script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
 <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />

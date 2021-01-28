@@ -37,10 +37,6 @@ a:hover {
     color: #fff;
 }
 
-#form-cotizacion div input {
-    border-radius: 0.35rem !important;
-}
-
 /**
  * Height
  */
@@ -104,34 +100,11 @@ a:hover {
     left: 15%;
 }
 
-.validNom {
-    position: absolute;
-    left: 75%;
-    top: 16%;
-}
-
-.validMail {
-    position: absolute;
-    left: 75%;
-    top: 25%;
-}
-
-.validPhone {
-    position: absolute;
-    left: 75%;
-    top: 34.5%;
-}
-
-.validMarca {
-    position: absolute;
-    left: 75%;
-    top: 43.5%;
-}
-
-.validAnio {
-    position: absolute;
-    left: 75%;
-    top: 53%;
+.pos-validate {
+    float: right;
+    position: relative;
+    top: -25px;
+    left: -22%;
 }
 
 /**
@@ -268,31 +241,6 @@ a:hover {
         max-width: 100%;
     }
 
-    .validNom {
-        position: absolute;
-        left: 81%;
-    }
-
-    .validMail {
-        position: absolute;
-        left: 81%;
-    }
-
-    .validPhone {
-        position: absolute;
-        left: 81%;
-    }
-
-    .validMarca {
-        position: absolute;
-        left: 81%;
-    }
-
-    .validAnio {
-        position: absolute;
-        left: 81%;
-    }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -348,31 +296,6 @@ a:hover {
 
     .txt-title {
         font-size: 4rem !important;
-    }
-
-    .validNom {
-        position: absolute;
-        left: 81%;
-    }
-
-    .validMail {
-        position: absolute;
-        left: 81%;
-    }
-
-    .validPhone {
-        position: absolute;
-        left: 81%;
-    }
-
-    .validMarca {
-        position: absolute;
-        left: 81%;
-    }
-
-    .validAnio {
-        position: absolute;
-        left: 81%;
     }
 
 }
