@@ -10,8 +10,8 @@
 @font-face {
     font-family: 'Klavika-bold';
     src: url('../fonts/Klavika\ Bold\ Bold.otf');
+    font-weight: bold;
 }
-
 
 * {
     margin: 0;
@@ -41,6 +41,10 @@ a:hover {
  * Height
  */
 
+.h100v {
+    height: 100vh;
+}
+
 /**
  * Fonts
  */
@@ -54,13 +58,21 @@ a:hover {
  */
 
 .bg-general {
-    background-image: url('../images/bg_general.png');
+    background-image: url('../images/bg_1_desktop@2x.png');
     background-size: 95%;
     background-repeat: no-repeat;
 }
 
+.bg-general-thanks {
+    background-image: url('../images/bg_2_desktop@2x.png');
+    background-size: 95%;
+    background-repeat: no-repeat;
+    height: 100% !important;
+    overflow: hidden;
+}
+
 .bg-red {
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: rgba(255, 0, 0, 0.7);
 }
 
 /**
@@ -68,11 +80,23 @@ a:hover {
  */
 
 .txt-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .txt-10 {
     font-size: 12px;
+}
+
+.txt-15 {
+    font-size: 15px;
+}
+
+.txt-20 {
+    font-size: 20px;
+}
+
+.txt-40 {
+    font-size: 40px;
 }
 
 /**
@@ -85,26 +109,34 @@ a:hover {
 }
 
 /**
+ * Margen
+ */
+
+.mt-200 {
+    margin-top: 250px;
+}
+
+/**
  * Contenedores dinámicos
  */
 
 .pos-form {
     position: absolute;
-    top: 14%;
-    left: 17%;
+    top: 10%;
+    left: 30%;
 }
 
 .pos-text {
     position: absolute;
-    top: 49%;
-    left: 15%;
+    top: 62%;
+    left: 5%;
 }
 
 .pos-validate {
     float: right;
     position: relative;
-    top: -25px;
-    left: -22%;
+    top: -28px;
+    left: -8%;
 }
 
 /**
@@ -123,22 +155,26 @@ a:hover {
     color: #aa0202;
 }
 
+.c-gray {
+    color: #B9B9B9;
+}
+
 /**
  * Buttons
  */
 
-.btn-dark-gray {
-    background-color: #2C2C2C;
+.btn-red {
+    background-color: #D81A2A;
     color: #fff;
 }
 
-.btn-dark-gray:hover {
-    background-color: #131313;
+.btn-red:hover {
+    background-color: #a20310;
     color: #fff;
 }
 
-.btn-dark-gray:disabled {
-    background-color: #727070;
+.btn-red:disabled {
+    background-color: #7e252c;
     opacity: 1;
     color: #fff;
 }
@@ -185,7 +221,7 @@ a:hover {
 @media screen and (max-width: 767px) {
 
     section {
-        height: 150vh;
+        height: 100vh;
     }
 
     .section-height {
@@ -197,15 +233,14 @@ a:hover {
     }
 
     .bg-general-mobile {
-        background-image: url('../images/bg_mobile.png');
+        background-image: url('../images/bg_1_mobile@2x.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
-        background-position-y: 10px;
     }
 
     .bg-general-mobile-thanks {
-        background-image: url('../images/2.png');
+        background-image: url('../images/bg_2_mobile@2x.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
@@ -228,9 +263,26 @@ a:hover {
         margin-top: 20px;
     }
 
+    .mt-50 {
+        margin-top: 50px;
+    }
+
     .ptext {
         padding-top: 110%;
         padding-bottom: 20%;
+    }
+
+    .pos-validate {
+        float: right;
+        position: relative;
+        top: -28px;
+        left: -10%;
+    }
+
+    .pos-form {
+        position: initial;
+        top: 0%;
+        left: 0%;
     }
 
     .d-flex {
@@ -241,12 +293,17 @@ a:hover {
         max-width: 100%;
     }
 
+    .p-mob {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     section {
-        height: 190vh;
+        height: 100vh;
     }
 
     .bg-general {
@@ -254,19 +311,19 @@ a:hover {
     }
 
     .bg-general-mobile {
-        background-image: url('../images/bg_mobile.png');
+        background-image: url('../images/bg_1_mobile@2x.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
-        background-position-y: 10px;
+        height: 110%;
     }
 
     .bg-general-mobile-thanks {
-        background-image: url('../images/thanks_bg.png');
+        background-image: url('../images/bg_2_mobile@2x.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
-        background-position-y: 10px;
+        height: 250% !important;
     }
 
     .d-mobile {
@@ -277,13 +334,14 @@ a:hover {
         display: block !important;
     }
 
-    .mt-20 {
-        margin-top: 20px;
+    .mt-200 {
+        margin-top: 400px;
     }
 
-    .ptext {
-        padding-top: 20%;
-        padding-bottom: 20%;
+    .pos-form {
+        position: initial;
+        top: 0%;
+        left: 0%;
     }
 
     .d-flex {
@@ -294,8 +352,16 @@ a:hover {
         max-width: 100%;
     }
 
-    .txt-title {
+    .txt-40 {
         font-size: 4rem !important;
+    }
+
+    .txt-30 {
+        font-size: 50px !important;
+    }
+
+    .p-mob {
+        padding: 80px;
     }
 
 }
