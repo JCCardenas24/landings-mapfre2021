@@ -4,32 +4,50 @@
     <?php include_once('template/head.php')?>
 </head>
 <body class="bg-general">
-    <section class="row col-12 mx-auto bg-general-mobile">
-        <div class="col-12 col-md-5 d-mobile">
-            <nav class="col-8 mx-auto">
+    <section class="row col-12 mx-auto bg-general-mobile p-0">
+        <div class="col-12 col-md-6 d-mobile">
+            <nav class="col-12 mx-auto">
                 <img class="mt-4" src="assets/images/logo_mapfre.svg" alt="logo">
             </nav>
-            <img class="pos-text d-mobile" src="assets/images/textox2.png" alt="text" width="450">
+            <div class="w-100 pos-text">
+                <h1 class="d-mobile c-white txt-title f-bold">¿Cuánto vale tu auto? <br> Cotiza, compara y encuentra el mejor precio.</h1>
+                <div class="row mx-auto mt-4">
+                    <div><span class="c-white txt-20"><i class="fa fa-circle txt-10 mr-2"></i>Paga tu póliza con 6 ó 12 MSI</span></div>
+                    <div><span class="c-white txt-20 ml-3"><i class="fa fa-circle txt-10 mr-2"></i>Recibe tu póliza de forma segura</span></div>
+                    <div><span class="c-white txt-20 ml-3"><i class="fa fa-circle txt-10 mr-2"></i>Fácil y seguro</span></div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-7 h-100 d-flex align-items-center mt-20">
-            <nav class="col-8 mx-auto text-center mb-4 d-desktop">
+        <div class="col-12 d-desktop">
+            <nav class="mb-4">
                 <img class="mt-4" src="assets/images/logo_mapfre.svg" alt="logo">
             </nav>
-            <div class="text-center col-12 col-md-8 mx-auto bg-red pt-4 pb-4 brd-rounded">
+            <div class="w-100 text-center mt-200">
+                <h3 class="c-white f-bold">¿Cuánto vale tu auto? <br> Cotiza, compara y encuentra el mejor precio.</h3>
+                <div class="row mx-auto col-11 mt-4 pb-4 text-center">
+                    <div class="col-12"><p class="c-white txt-15 m-0 c-gray">Paga tu póliza con 6 ó 12 MSI</p></div>
+                    <div class="col-12"><p class="c-white txt-15 m-0 c-gray">Recibe tu póliza de forma segura</p></div>
+                    <div class="col-12"><p class="c-white txt-15 m-0 c-gray">Fácil y seguro</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 p-0 bg-mobile">
+            <img class="img-bg-plecas d-mobile" src="assets/images/plecasx2.png" alt="plecas">
+            <div class="pos-form text-center col-12 col-md-12 col-lg-7 p-mob">
                 <h3 class="c-white f-bold">Ingresa tus datos</h3>
-                <form id="form-cotizacion" action="" class="mt-3">
+                <form id="form-cotizacion" action="" class="mt-3 col-12 mx-auto">
                     <div class="form-group text-center">
-                        <input id="nombre" class="col-11 col-md-8 form-control mx-auto form-control-sm validate" type="text" placeholder="Nombre completo*" required>
+                        <input id="nombre" class="col-11 col-md-12 form-control mx-auto validate" type="text" placeholder="Nombre completo*" required>
                         <i class="validNom fa fa-check c-green pos-validate d-none"></i>
                         <i class="validNom fa fa-times c-red pos-validate d-none"></i>
                     </div>
                     <div class="form-group text-center">
-                        <input id="codigo" class="col-11 col-md-8 form-control mx-auto form-control-sm validate" type="text" placeholder="Código Postal*" maxlength="6" required>
+                        <input id="codigo" class="col-11 col-md-12 form-control mx-auto validate" type="text" placeholder="Código Postal*" maxlength="6" required>
                         <i class="validCodigo fa fa-check c-green pos-validate d-none"></i>
                         <i class="validCodigo fa fa-times c-red pos-validate d-none"></i>
                     </div>
                     <div class="form-group text-center">
-                        <select class="form-control col-11 col-md-8 mx-auto form-control-sm" id="sexoSelect">
+                        <select class="form-control col-11 col-md-12 mx-auto" id="sexoSelect">
                             <option selected>Sexo*</option>
                             <option value="0">Femenino</option>
                             <option value="0">Masculino</option>
@@ -38,25 +56,25 @@
                         <i class="fa fa-times c-red pos-validate d-none"></i>
                     </div>
                     <div class="form-group text-center">
-                        <input type="text" class="col-11 col-md-8 form-control mx-auto form-control-sm" name="birthday" value="10/24/1984" />
+                        <input type="text" class="col-11 col-md-12 form-control mx-auto" name="birthday" value="10/24/1984" />
                     </div>
                     <div class="form-group text-center">
-                        <input id="mail" class="col-11 col-md-8 form-control mx-auto form-control-sm validate" type="mail" placeholder="Correo electrónico*" required>
+                        <input id="mail" class="col-11 col-md-12 form-control mx-auto validate" type="mail" placeholder="Correo electrónico*" required>
                         <i class="validMail fa fa-check c-green pos-validate d-none"></i>
                         <i class="validMail fa fa-times c-red pos-validate d-none"></i>
                     </div>
                     <div class="form-group text-center">
-                        <input id="telefono" class="col-11 col-md-8 form-control mx-auto form-control-sm validate" type="text" placeholder="Teléfono*" maxlength="10" required>
+                        <input id="telefono" class="col-11 col-md-12 form-control mx-auto validate" type="text" placeholder="Teléfono*" maxlength="10" required>
                         <i class="validPhone fa fa-check c-green pos-validate d-none"></i>
                         <i class="validPhone fa fa-times c-red pos-validate d-none"></i>
                     </div>
                     <div class="form-group text-center">
-                        <input id="marca" class="col-11 col-md-8 form-control mx-auto form-control-sm validate" type="text" placeholder="Marca*" required>
+                        <input id="marca" class="col-11 col-md-12 form-control mx-auto validate" type="text" placeholder="Marca*" required>
                         <i class="validMarca fa fa-check c-green pos-validate d-none"></i>
                         <i class="validMarca fa fa-times c-red pos-validate d-none"></i>
                     </div>
                     <div class="form-group text-center">
-                        <input id="anio" class="col-11 col-md-8 form-control mx-auto form-control-sm validate" type="text" placeholder="Año*" maxlength="4" required>
+                        <input id="anio" class="col-11 col-md-12 form-control mx-auto validate" type="text" placeholder="Año*" maxlength="4" required>
                         <i class="validAnio fa fa-check c-green pos-validate d-none"></i>
                         <i class="validAnio fa fa-times c-red pos-validate d-none"></i>
                     </div>
@@ -69,16 +87,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mt-4">
+                        <button id="sendData" type="button" class="btn btn-dark-gray col-11 col-md-12 f-bold" disabled>¡Quiero cotizar!</button>
+                    </div>
+                    <div class="mt-2">
+                        <span class="c-white txt-10">* Datos obligatorios</span>
+                    </div>
                 </form>
-                <div class="mt-4">
-                    <button id="sendData" class="btn btn-dark-gray col-11 col-md-8 f-bold" disabled>¡Quiero cotizar!</button>
-                </div>
-                <div class="mt-2">
-                    <span class="c-white txt-10">* Datos obligatorios</span>
-                </div>
-            </div>
-            <div class="d-desktop ptext text-center">
-                <img class="mx-100" src="assets/images/texto.png" alt="texto">
             </div>
         </div>
     </section>

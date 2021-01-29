@@ -13,9 +13,9 @@ const btnCotizar = document.getElementById('cotizar');
 
 inpts.forEach(element => {
     element.addEventListener('focusout', function() {
-        let inptValid = document.querySelectorAll('.fa-check.d-none').length;
+        let inptValid = document.querySelectorAll('.fa-check.d-none').length+1;
         console.log(inptValid);
-        if(inptValid === 6) {
+        if(inptValid === 3) {
             btnData.removeAttribute('disabled');
         } else {
             btnData.setAttribute('disabled', true);
