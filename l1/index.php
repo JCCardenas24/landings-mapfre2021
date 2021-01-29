@@ -5,19 +5,36 @@
 </head>
 <body class="bg-general">
     <section class="row col-12 mx-auto bg-general-mobile">
-        <div class="col-12 col-md-5 d-mobile">
-            <nav class="col-8 mx-auto">
+        <div class="col-12 col-md-6 d-mobile">
+            <nav class="col-12 mx-auto">
                 <img class="mt-4" src="assets/images/logo_mapfre.svg" alt="logo">
             </nav>
-            <img class="pos-text d-mobile" src="assets/images/textox2.png" alt="text" width="450">
+            <div class="w-100 pos-text">
+                <h1 class="d-mobile c-white txt-title f-bold">¡Cotiza tu auto <br> y contrata hoy!</h1>
+                <div class="row mx-auto mt-5 pb-4">
+                    <div><span class="c-white txt-20"><i class="fa fa-circle txt-10 mr-2"></i>Paga tu póliza con 6 ó 12 MSI</span></div>
+                    <div><span class="c-white txt-20 ml-3"><i class="fa fa-circle txt-10 mr-2"></i>Recibe tu póliza de forma segura</span></div>
+                    <div><span class="c-white txt-20 ml-3"><i class="fa fa-circle txt-10 mr-2"></i>Fácil y seguro</span></div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-7 h-100 d-flex align-items-center mt-20">
-            <nav class="col-8 mx-auto text-center mb-4 d-desktop">
+        <div class="col-12 d-desktop">
+            <nav class="mb-4">
                 <img class="mt-4" src="assets/images/logo_mapfre.svg" alt="logo">
             </nav>
+            <div class="w-100 text-center mt-200">
+                <h1 class="c-white txt-40 f-bold">¡Cotiza tu auto <br> y contrata hoy!</h1>
+                <div class="row mx-auto col-11 mt-4 pb-4 text-center">
+                    <div class="col-12"><p class="c-white txt-15 m-0 c-gray">Paga tu póliza con 6 ó 12 MSI</p></div>
+                    <div class="col-12"><p class="c-white txt-15 m-0 c-gray">Recibe tu póliza de forma segura</p></div>
+                    <div class="col-12"><p class="c-white txt-15 m-0 c-gray">Fácil y seguro</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 h-100 d-flex align-items-center mt-20">
             <div class="text-center col-12 col-md-8 mx-auto bg-red pt-4 pb-4 brd-rounded">
                 <h3 class="c-white f-bold">Ingresa tus datos</h3>
-                <form id="form-cotizacion" action="" class="mt-3">
+                <form id="form-cotizacion" action="" class="mt-3 col-12 mx-auto">
                     <div class="form-group text-center">
                         <input id="nombre" class="col-11 col-md-8 form-control mx-auto form-control-sm validate" type="text" placeholder="Nombre completo*" required>
                         <i class="validNom fa fa-check c-green pos-validate d-none"></i>
@@ -69,16 +86,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mt-4">
+                        <button id="sendData" type="button" class="btn btn-dark-gray col-11 col-md-8 f-bold" disabled>¡Quiero cotizar!</button>
+                    </div>
+                    <div class="mt-2">
+                        <span class="c-white txt-10">* Datos obligatorios</span>
+                    </div>
                 </form>
-                <div class="mt-4">
-                    <button id="sendData" class="btn btn-dark-gray col-11 col-md-8 f-bold" disabled>¡Quiero cotizar!</button>
-                </div>
-                <div class="mt-2">
-                    <span class="c-white txt-10">* Datos obligatorios</span>
-                </div>
-            </div>
-            <div class="d-desktop ptext text-center">
-                <img class="mx-100" src="assets/images/texto.png" alt="texto">
             </div>
         </div>
     </section>
