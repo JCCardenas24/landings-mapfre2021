@@ -155,3 +155,9 @@ function clearStyles(objElem) {
     objElem.classList.remove('is-valid');
     objElem.classList.remove('is-invalid');
 }
+
+$(document).ready(function(){
+ 
+    $('input[name="birthday"]').val('');
+    $('input[name="birthday"]').attr("placeholder","Fecha de nacimiento*");
+});

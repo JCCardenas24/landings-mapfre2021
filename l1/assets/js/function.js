@@ -1,3 +1,9 @@
+$(document).ready(function () {
+
+    $('input[name="birthday"]').val('');
+    $('input[name="birthday"]').attr("placeholder", "Fecha de nacimiento*");
+});
+
 /**
  * Funcionalidades
  */

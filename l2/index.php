@@ -48,7 +48,7 @@
                     </div>
                     <div class="form-group text-center">
                         <select class="form-control col-11 col-md-12 mx-auto" id="sexoSelect">
-                            <option selected>Sexo*</option>
+                        <option disabled selected value="">Sexo*</option>
                             <option value="0">Femenino</option>
                             <option value="0">Masculino</option>
                         </select>
@@ -56,7 +56,7 @@
                         <i class="fa fa-times c-red pos-validate d-none"></i>
                     </div>
                     <div class="form-group text-center">
-                        <input type="text" class="col-11 col-md-12 form-control mx-auto" name="birthday" value="10/24/1984" />
+                        <input type="text" class="col-11 col-md-12 form-control mx-auto" name="birthday" required>
                     </div>
                     <div class="form-group text-center">
                         <input id="mail" class="col-11 col-md-12 form-control mx-auto validate" type="mail" placeholder="Correo electrónico*" required>
@@ -71,7 +71,12 @@
                     <div class="form-group text-center">
                         <input id="marca" class="col-11 col-md-12 form-control mx-auto validate" type="text" placeholder="Marca*" required>
                         <i class="validMarca fa fa-check c-green pos-validate d-none"></i>
-                        <i class="validMarca fa fa-times c-red pos-validate d-none"></i>
+                        <i class="validMarca fa fa-times c-red pos-vcalidate d-none"></i>
+                    </div>
+                    <div class="form-group text-center">
+                        <input id="modelo" class="col-11 col-md-12 form-control mx-auto validate" type="text" placeholder="Modelo*" required>
+                        <i class="validMarca fa fa-check c-green pos-validate d-none"></i>
+                        <i class="validMarca fa fa-times c-red pos-vcalidate d-none"></i>
                     </div>
                     <div class="form-group text-center">
                         <input id="anio" class="col-11 col-md-12 form-control mx-auto validate" type="text" placeholder="Año*" maxlength="4" required>

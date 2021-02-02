@@ -28,7 +28,7 @@ btnData.addEventListener('click', function() {
     window.location.href = 'thanks.php'
 });
 
-nCompleto.addEventListener('focusout', function() {
+nCompleto.addEventListener('input', function() {
     let vNom = validateString(this, this.value);
     if(vNom == true) {
         document.querySelector('.validNom.fa-check').classList.remove('d-none');
@@ -39,7 +39,7 @@ nCompleto.addEventListener('focusout', function() {
     }
 });
 
-cPostal.addEventListener('focusout', function() {
+cPostal.addEventListener('input', function() {
     let vNom = validateNumber(this, this.value);
     if(vNom == true) {
         document.querySelector('.validCodigo.fa-check').classList.remove('d-none');
@@ -51,7 +51,7 @@ cPostal.addEventListener('focusout', function() {
 });
 
 
-correo.addEventListener('focusout', function() {
+correo.addEventListener('input', function() {
     let vMail = validateMail(this, this.value);
     if(vMail == true) {
         document.querySelector('.validMail.fa-check').classList.remove('d-none');
@@ -62,7 +62,7 @@ correo.addEventListener('focusout', function() {
     }
 });
 
-phone.addEventListener('focusout', function() {
+phone.addEventListener('input', function() {
     let vPhone = validateNumber(this, this.value);
     if(vPhone == true) {
         document.querySelector('.validPhone.fa-check').classList.remove('d-none');
@@ -73,7 +73,7 @@ phone.addEventListener('focusout', function() {
     }
 });
 
-car.addEventListener('focusout', function() {
+car.addEventListener('input', function() {
     let vCar = validateString(this, this.value);
     if(vCar == true) {
         document.querySelector('.validMarca.fa-check').classList.remove('d-none');
@@ -84,7 +84,7 @@ car.addEventListener('focusout', function() {
     }
 });
 
-year.addEventListener('focusout', function() {
+year.addEventListener('input', function() {
     let vYear = validateNumber(this, this.value);
     if(vYear == true) {
         document.querySelector('.validAnio.fa-check').classList.remove('d-none');
@@ -155,3 +155,9 @@ function clearStyles(objElem) {
     objElem.classList.remove('is-valid');
     objElem.classList.remove('is-invalid');
 }
+
+$(document).ready(function () {
+
+    $('input[name="birthday"]').val('');
+    $('input[name="birthday"]').attr("placeholder", "Fecha de nacimiento*");
+});

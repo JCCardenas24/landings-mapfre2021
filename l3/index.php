@@ -10,7 +10,7 @@
                 <img class="mt-4" src="assets/images/logo_mapfre.svg" alt="logo">
             </nav>
             <div class="w-100 pos-text">
-                <h1 class="d-mobile c-white txt-title f-bold">Disfruta de coberturas adicionales más completas</h1>
+                <h1 class="d-mobile c-white txt-title f-bold">Disfruta de coberturas adicionales más completas.</h1>
                 <div class="row mx-auto mt-4">
                     <div><span class="c-white txt-20"><i class="fa fa-circle txt-10 mr-2"></i>Paga tu póliza con 6 ó 12 MSI</span></div>
                     <div><span class="c-white txt-20 ml-3"><i class="fa fa-circle txt-10 mr-2"></i>Recibe tu póliza de forma segura</span></div>

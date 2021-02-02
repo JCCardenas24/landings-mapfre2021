@@ -4,6 +4,17 @@
     <?php include_once('template/head.php')?>
 </head>
 <body class="bg-general d-flex justify-content-center align-items-center">
+    <style>
+        html, body{
+            background-color: black;
+        }
+
+        .bg-general {
+    background-image: url('assets/images/bg_1_desktop@2x.png');
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+    </style>
     <section class="row col-12 m-0 p-0 text-center bg-general-mobile-thanks section-height" style="display:flex !important; align-items:center !important">
         <div class="col-12 h-50">
             <img class="mx-auto" src="assets/images/ok_g.png" alt="ok">

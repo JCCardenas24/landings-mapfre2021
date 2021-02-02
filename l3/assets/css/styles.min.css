@@ -92,11 +92,20 @@ a:hover {
 }
 
 .txt-20 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .txt-40 {
     font-size: 40px;
+}
+
+.form-group {
+    margin-bottom: 13px !important;
+    /* height: 7%; */
+}
+
+.form-control{
+    height: 7%!important;
 }
 
 /**
